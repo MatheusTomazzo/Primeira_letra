@@ -56,16 +56,16 @@ $(document).ready(function(){
 			texto = texto.split(",")
 			for(var i = 0; i < texto.length; i++){
 				
-				var palavra = texto[i]
+				var palavra = texto[i].toLowerCase()
 				Up += texto[0][i].toUpperCase() + texto[i].substring(1) + " ";
 				
 				
 			}
 			
-			document.getElementById("retorno").innerHTML = Up + "<p>"; 
+			document.getElementById("retorno").innerHTML = Up; 
 			
 		}else{
-			
+			texto = texto.toLowerCase()
 			document.getElementById("retorno").innerHTML = texto[0].toUpperCase() + texto.substring(1); 
 		}
 	  
